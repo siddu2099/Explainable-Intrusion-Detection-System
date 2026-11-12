@@ -1,0 +1,15 @@
+{
+  "timestamp": "2026-11-12T17:44:28.948812+00:00",
+  "random_seed": 42,
+  "split_strategy": "GroupShuffleSplit",
+  "grouping_variable": "time_bucket",
+  "train_rows": 99778,
+  "test_rows": 27654,
+  "train_groups": 835,
+  "test_groups": 209,
+  "total_unique_groups": 1044,
+  "overlap_count": 0,
+  "leakage_percentage": 0.0,
+  "isolation_verified": true,
+  "overlapping_groups_sample": []
+}

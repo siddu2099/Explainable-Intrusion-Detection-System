@@ -1,0 +1,53 @@
+{
+  "composite_rank": {
+    "spearman_rho": 0.0536,
+    "p_value": 0.84961,
+    "p_value_str": "8.4961e-01",
+    "significant_p05": false,
+    "ci_95_lower": -0.5382,
+    "ci_95_upper": 0.633,
+    "n_features": 15,
+    "interpretation": "Negligible cross-dataset rank agreement",
+    "deployment_implication": "Feature ranking shows domain-specific variation \u2014 dataset-specific feature selection is recommended."
+  },
+  "mi_rank": {
+    "spearman_rho": 0.2857,
+    "p_value": 0.30194,
+    "p_value_str": "3.0194e-01",
+    "significant_p05": false,
+    "ci_95_lower": -0.3889,
+    "ci_95_upper": 0.8209,
+    "n_features": 15,
+    "interpretation": "Weak cross-dataset rank agreement",
+    "deployment_implication": "Feature ranking shows domain-specific variation \u2014 dataset-specific feature selection is recommended."
+  },
+  "rf_rank": {
+    "spearman_rho": 0.2179,
+    "p_value": 0.43539,
+    "p_value_str": "4.3539e-01",
+    "significant_p05": false,
+    "ci_95_lower": -0.3743,
+    "ci_95_upper": 0.7422,
+    "n_features": 15,
+    "interpretation": "Weak cross-dataset rank agreement",
+    "deployment_implication": "Feature ranking shows domain-specific variation \u2014 dataset-specific feature selection is recommended."
+  },
+  "xgb_rank": {
+    "spearman_rho": -0.1393,
+    "p_value": 0.62055,
+    "p_value_str": "6.2055e-01",
+    "significant_p05": false,
+    "ci_95_lower": -0.6262,
+    "ci_95_upper": 0.4043,
+    "n_features": 15,
+    "interpretation": "Negligible cross-dataset rank agreement",
+    "deployment_implication": "Feature ranking shows domain-specific variation \u2014 dataset-specific feature selection is recommended."
+  },
+  "importance_magnitude": {
+    "spearman_rho": 0.0536,
+    "p_value_str": "8.4961e-01",
+    "ci_95_lower": -0.5382,
+    "ci_95_upper": 0.633,
+    "note": "Correlation of raw importance magnitudes (not ranks). Strong \u03c1 confirms that highly-important features in one domain are also highly important in the other."
+  }
+}

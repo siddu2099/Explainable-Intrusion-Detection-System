@@ -1,0 +1,23 @@
+[
+  {
+    "Model":"Logistic Regression",
+    "Accuracy":0.8259,
+    "Precision":0.8273,
+    "Recall":0.7119,
+    "F1-Score":0.7253
+  },
+  {
+    "Model":"Random Forest",
+    "Accuracy":0.9031,
+    "Precision":0.9104,
+    "Recall":0.8637,
+    "F1-Score":0.8567
+  },
+  {
+    "Model":"XGBoost (Proposed Pipeline)",
+    "Accuracy":0.9781,
+    "Precision":0.9677,
+    "Recall":0.9799,
+    "F1-Score":0.9736
+  }
+]

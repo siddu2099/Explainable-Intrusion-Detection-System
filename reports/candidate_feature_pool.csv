@@ -1,0 +1,16 @@
+feature,available_2017,available_2018,available_both,classification,feature_type,mean_2017,mean_2018,std_2017,std_2018
+burst_ratio,True,True,True,production,engineered,1089174.1165,338372.8317,3100663.9253,1091113.0434
+byte_per_packet,True,True,True,production,engineered,164.6547,38.8465,503.1398,57.7149
+uni_ack_flag_count,True,True,True,extended_candidate,raw,0.5048,0.2641,0.5,0.4409
+uni_bwd_bytes,True,True,True,production,raw,5700.1274,4746.4803,26709.7457,158237.2287
+uni_bwd_iat_mean,True,True,True,extended_candidate,raw,969893.3143,485648.3713,4525565.5104,2389736.037
+uni_bwd_packets,True,True,True,production,raw,4.4166,7.3968,15.5184,109.6731
+uni_bwd_pkt_len_mean,True,True,True,extended_candidate,raw,886.5483,93.159,1115.2225,159.7158
+uni_flow_bytes_per_sec,True,True,True,extended_candidate,raw,531545.6551,194506.1453,17481294.3147,3196195.9262
+uni_flow_duration,True,True,True,production,raw,16378714.7438,8593335.4698,31542347.4067,26551958.703
+uni_flow_pkts_per_sec,True,True,True,extended_candidate,raw,13316.6232,268700.9775,109481.1356,551930.9595
+uni_fwd_bytes,True,True,True,production,raw,923.037,503.5569,2993.9234,26318.1091
+uni_fwd_iat_mean,True,True,True,extended_candidate,raw,2575022.3551,2122258.7968,5892604.1266,9623878.3285
+uni_fwd_packets,True,True,True,production,raw,4.7827,6.3121,11.8236,48.3305
+uni_fwd_pkt_len_mean,True,True,True,extended_candidate,raw,164.6548,38.8466,503.1399,57.7149
+uni_syn_flag_count,True,True,True,extended_candidate,raw,0.0319,0.0259,0.1756,0.1589

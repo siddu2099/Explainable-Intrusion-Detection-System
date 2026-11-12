@@ -1,0 +1,36 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Large Dataset CSV files (CIC-IDS datasets exceed GitHub's 100MB file limit)
+data/**/*.csv
+data/*.csv
+*.pcap
+*.pcap_ISCX.csv
+
+# Keep metadata/summary CSVs in artifacts
+!artifacts/*.csv
+
+# Operating System Files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE and Editor Files
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Temporary directories and logs
+*.log
+tmp/
+run commands
+run commands.*

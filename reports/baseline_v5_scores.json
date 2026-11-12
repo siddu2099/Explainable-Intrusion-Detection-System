@@ -1,0 +1,171 @@
+{
+    "meta": {
+        "version": "v5",
+        "freeze_timestamp": "2026-05-30T09:52:48.013519Z",
+        "random_seed": 42,
+        "split_strategy": "random_stratified_train_test_split",
+        "test_size": 0.2,
+        "sample_frac": 0.1,
+        "xgboost_version": "3.2.0",
+        "sklearn_version": "1.8.0",
+        "features": [
+            "uni_flow_duration",
+            "uni_fwd_packets",
+            "uni_bwd_packets",
+            "uni_fwd_bytes",
+            "uni_bwd_bytes",
+            "burst_ratio",
+            "byte_per_packet"
+        ],
+        "n_features": 7,
+        "n_classes": 4,
+        "class_names": [
+            "BENIGN",
+            "DDOS",
+            "FTP-BRUTEFORCE",
+            "SSH-BRUTEFORCE"
+        ]
+    },
+    "dataset_sizes": {
+        "total_rows": 127432,
+        "train_rows": 101945,
+        "test_rows": 25487,
+        "train_dist": {
+            "BENIGN": 60855,
+            "SSH-BRUTEFORCE": 15190,
+            "FTP-BRUTEFORCE": 15566,
+            "DDOS": 10334
+        },
+        "test_dist": {
+            "BENIGN": 15214,
+            "FTP-BRUTEFORCE": 3892,
+            "SSH-BRUTEFORCE": 3798,
+            "DDOS": 2583
+        }
+    },
+    "xgboost_metrics": {
+        "accuracy": 0.980029,
+        "macro_precision": 0.969589,
+        "macro_recall": 0.982086,
+        "macro_f1": 0.975234,
+        "confusion_matrix": [
+            [
+                14900,
+                9,
+                299,
+                6
+            ],
+            [
+                0,
+                2583,
+                0,
+                0
+            ],
+            [
+                3,
+                0,
+                3841,
+                48
+            ],
+            [
+                0,
+                0,
+                144,
+                3654
+            ]
+        ],
+        "classification_report": {
+            "BENIGN": {
+                "precision": 0.9997986982486747,
+                "recall": 0.9793611147627186,
+                "f1-score": 0.9894743832387024,
+                "support": 15214.0
+            },
+            "DDOS": {
+                "precision": 0.9965277777777778,
+                "recall": 1.0,
+                "f1-score": 0.9982608695652174,
+                "support": 2583.0
+            },
+            "FTP-BRUTEFORCE": {
+                "precision": 0.8965919701213819,
+                "recall": 0.986896197327852,
+                "f1-score": 0.9395792563600783,
+                "support": 3892.0
+            },
+            "SSH-BRUTEFORCE": {
+                "precision": 0.9854368932038835,
+                "recall": 0.9620853080568721,
+                "f1-score": 0.973621103117506,
+                "support": 3798.0
+            },
+            "accuracy": 0.980029034409699,
+            "macro avg": {
+                "precision": 0.9695888348379296,
+                "recall": 0.9820856550368607,
+                "f1-score": 0.975233903070376,
+                "support": 25487.0
+            },
+            "weighted avg": {
+                "precision": 0.9815668345923845,
+                "recall": 0.980029034409699,
+                "f1-score": 0.9803831956712946,
+                "support": 25487.0
+            }
+        }
+    },
+    "pipeline_metrics": {
+        "n_classified": 23933,
+        "accuracy": 0.9867546901767434,
+        "macro_f1": 0.9831383364880039,
+        "macro_precision": 0.9795852852405982,
+        "macro_recall": 0.9870305990636287,
+        "classification_report": {
+            "BENIGN": {
+                "precision": 0.9997800425251118,
+                "recall": 0.9879011809027023,
+                "f1-score": 0.9938051162451716,
+                "support": 13803.0
+            },
+            "DDOS": {
+                "precision": 0.9945820433436533,
+                "recall": 1.0,
+                "f1-score": 0.9972836631742336,
+                "support": 2570.0
+            },
+            "FTP-BRUTEFORCE": {
+                "precision": 0.9385460904321759,
+                "recall": 0.9866071428571429,
+                "f1-score": 0.961976699526309,
+                "support": 3808.0
+            },
+            "SSH-BRUTEFORCE": {
+                "precision": 0.9854329646614514,
+                "recall": 0.9736140724946695,
+                "f1-score": 0.9794878670063011,
+                "support": 3752.0
+            },
+            "accuracy": 0.9867546901767434,
+            "macro avg": {
+                "precision": 0.9795852852405982,
+                "recall": 0.9870305990636287,
+                "f1-score": 0.9831383364880039,
+                "support": 23933.0
+            },
+            "weighted avg": {
+                "precision": 0.9872296734276019,
+                "recall": 0.9867546901767434,
+                "f1-score": 0.9868698776874488,
+                "support": 23933.0
+            }
+        }
+    },
+    "stage_counts": {
+        "DDOS_RULE": 5,
+        "ANOMALY": 1266,
+        "LOW_CONFIDENCE": 288,
+        "CLASSIFIED": 23928
+    },
+    "rule_override_count": 5,
+    "anomaly_count": 1271
+}

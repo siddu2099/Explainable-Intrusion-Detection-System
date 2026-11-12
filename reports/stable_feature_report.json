@@ -1,0 +1,209 @@
+{
+  "stability_thresholds": {
+    "HIGH_STABILITY": ">= 0.75",
+    "MEDIUM_STABILITY": ">= 0.5",
+    "LOW_STABILITY": "< 0.5"
+  },
+  "stability_formula": "Stability_Score = 0.5 \u00d7 Rank_Agreement + 0.5 \u00d7 Importance_Consistency",
+  "n_features_evaluated": 15,
+  "feature_scores": {
+    "uni_fwd_packets": {
+      "stability_score": 0.9464,
+      "stability_class": "HIGH_STABILITY",
+      "rank_agreement": 0.9333,
+      "importance_consistency": 0.9595,
+      "rank_2017": 5,
+      "rank_2018": 4,
+      "rank_difference": 1,
+      "importance_2017": 0.4493,
+      "importance_2018": 0.4311
+    },
+    "uni_fwd_bytes": {
+      "stability_score": 0.8521,
+      "stability_class": "HIGH_STABILITY",
+      "rank_agreement": 0.9333,
+      "importance_consistency": 0.7709,
+      "rank_2017": 3,
+      "rank_2018": 2,
+      "rank_difference": 1,
+      "importance_2017": 0.8613,
+      "importance_2018": 0.664
+    },
+    "uni_bwd_packets": {
+      "stability_score": 0.8329,
+      "stability_class": "HIGH_STABILITY",
+      "rank_agreement": 0.8,
+      "importance_consistency": 0.8658,
+      "rank_2017": 9,
+      "rank_2018": 6,
+      "rank_difference": 3,
+      "importance_2017": 0.2264,
+      "importance_2018": 0.2615
+    },
+    "uni_fwd_iat_mean": {
+      "stability_score": 0.6934,
+      "stability_class": "MEDIUM_STABILITY",
+      "rank_agreement": 0.8,
+      "importance_consistency": 0.5869,
+      "rank_2017": 6,
+      "rank_2018": 9,
+      "rank_difference": 3,
+      "importance_2017": 0.4001,
+      "importance_2018": 0.2348
+    },
+    "uni_flow_bytes_per_sec": {
+      "stability_score": 0.6814,
+      "stability_class": "MEDIUM_STABILITY",
+      "rank_agreement": 0.8,
+      "importance_consistency": 0.5629,
+      "rank_2017": 13,
+      "rank_2018": 10,
+      "rank_difference": 3,
+      "importance_2017": 0.1249,
+      "importance_2018": 0.2219
+    },
+    "uni_bwd_bytes": {
+      "stability_score": 0.6758,
+      "stability_class": "MEDIUM_STABILITY",
+      "rank_agreement": 0.8,
+      "importance_consistency": 0.5515,
+      "rank_2017": 8,
+      "rank_2018": 11,
+      "rank_difference": 3,
+      "importance_2017": 0.3813,
+      "importance_2018": 0.2103
+    },
+    "uni_bwd_iat_mean": {
+      "stability_score": 0.6483,
+      "stability_class": "MEDIUM_STABILITY",
+      "rank_agreement": 0.7333,
+      "importance_consistency": 0.5633,
+      "rank_2017": 10,
+      "rank_2018": 14,
+      "rank_difference": 4,
+      "importance_2017": 0.2205,
+      "importance_2018": 0.1242
+    },
+    "burst_ratio": {
+      "stability_score": 0.5007,
+      "stability_class": "MEDIUM_STABILITY",
+      "rank_agreement": 0.6,
+      "importance_consistency": 0.4015,
+      "rank_2017": 7,
+      "rank_2018": 13,
+      "rank_difference": 6,
+      "importance_2017": 0.3821,
+      "importance_2018": 0.1534
+    },
+    "uni_fwd_pkt_len_mean": {
+      "stability_score": 0.4779,
+      "stability_class": "LOW_STABILITY",
+      "rank_agreement": 0.6667,
+      "importance_consistency": 0.2891,
+      "rank_2017": 2,
+      "rank_2018": 7,
+      "rank_difference": 5,
+      "importance_2017": 0.8994,
+      "importance_2018": 0.26
+    },
+    "uni_syn_flag_count": {
+      "stability_score": 0.4667,
+      "stability_class": "LOW_STABILITY",
+      "rank_agreement": 0.9333,
+      "importance_consistency": 0.0001,
+      "rank_2017": 14,
+      "rank_2018": 15,
+      "rank_difference": 1,
+      "importance_2017": 0.0156,
+      "importance_2018": 0.0
+    },
+    "uni_flow_duration": {
+      "stability_score": 0.4569,
+      "stability_class": "LOW_STABILITY",
+      "rank_agreement": 0.6,
+      "importance_consistency": 0.3139,
+      "rank_2017": 11,
+      "rank_2018": 5,
+      "rank_difference": 6,
+      "importance_2017": 0.1328,
+      "importance_2018": 0.4231
+    },
+    "uni_bwd_pkt_len_mean": {
+      "stability_score": 0.4456,
+      "stability_class": "LOW_STABILITY",
+      "rank_agreement": 0.4667,
+      "importance_consistency": 0.4246,
+      "rank_2017": 4,
+      "rank_2018": 12,
+      "rank_difference": 8,
+      "importance_2017": 0.4567,
+      "importance_2018": 0.1939
+    },
+    "byte_per_packet": {
+      "stability_score": 0.3951,
+      "stability_class": "LOW_STABILITY",
+      "rank_agreement": 0.5333,
+      "importance_consistency": 0.2568,
+      "rank_2017": 1,
+      "rank_2018": 8,
+      "rank_difference": 7,
+      "importance_2017": 0.9717,
+      "importance_2018": 0.2495
+    },
+    "uni_flow_pkts_per_sec": {
+      "stability_score": 0.2097,
+      "stability_class": "LOW_STABILITY",
+      "rank_agreement": 0.2667,
+      "importance_consistency": 0.1527,
+      "rank_2017": 12,
+      "rank_2018": 1,
+      "rank_difference": 11,
+      "importance_2017": 0.1265,
+      "importance_2018": 0.8286
+    },
+    "uni_ack_flag_count": {
+      "stability_score": 0.1048,
+      "stability_class": "LOW_STABILITY",
+      "rank_agreement": 0.2,
+      "importance_consistency": 0.0097,
+      "rank_2017": 15,
+      "rank_2018": 3,
+      "rank_difference": 12,
+      "importance_2017": 0.0042,
+      "importance_2018": 0.4335
+    }
+  },
+  "summary": {
+    "HIGH_STABILITY": [
+      "uni_fwd_packets",
+      "uni_fwd_bytes",
+      "uni_bwd_packets"
+    ],
+    "MEDIUM_STABILITY": [
+      "uni_fwd_iat_mean",
+      "uni_flow_bytes_per_sec",
+      "uni_bwd_bytes",
+      "uni_bwd_iat_mean",
+      "burst_ratio"
+    ],
+    "LOW_STABILITY": [
+      "uni_fwd_pkt_len_mean",
+      "uni_syn_flag_count",
+      "uni_flow_duration",
+      "uni_bwd_pkt_len_mean",
+      "byte_per_packet",
+      "uni_flow_pkts_per_sec",
+      "uni_ack_flag_count"
+    ],
+    "recommended_feature_set": [
+      "uni_fwd_packets",
+      "uni_fwd_bytes",
+      "uni_bwd_packets",
+      "uni_fwd_iat_mean",
+      "uni_flow_bytes_per_sec",
+      "uni_bwd_bytes",
+      "uni_bwd_iat_mean",
+      "burst_ratio"
+    ]
+  }
+}
